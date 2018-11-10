@@ -1,0 +1,75 @@
+<!--logs.wxml 首页-->
+<!--图片的轮播-->
+<view class="slider">
+  <swiper autoplay interval="3500" indicator-dots>
+    <swiper-item wx:for="{{imagelist}}" wx:key="id">
+      <image src="{{item.img_url}}" mode="aspectFill" lazy-load width="375" height="150"/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!--首页导航分区-->
+<view class="index-nav">
+  <navigator class="nav-item bdr">
+    <image src="/assets/icons/ms.png" />
+    <text>水果</text>
+  </navigator>
+  <navigator class="nav-item bdr">
+    <image src="/assets/icons/xx.png" />
+    <text>休闲食品</text>
+  </navigator>
+  <navigator class="nav-item">
+    <image src="/assets/icons/jj.png" />
+    <text>家居生活</text>
+  </navigator>
+  <navigator class="nav-item bdr">
+    <image src="/assets/icons/ly.png" />
+    <text>粮油调味</text>
+  </navigator>
+  <navigator class="nav-item bdr">
+    <image src="/assets/icons/js.png" />
+    <text>酒水饮料</text>
+  </navigator>
+  <navigator class="nav-item">
+    <image src="/assets/icons/qj.png" />
+    <text>清洁纸品</text>
+  </navigator>
+  <navigator class="nav-item bdr">
+    <image src="/assets/icons/my.png" />
+    <text>母婴商品</text>
+  </navigator>
+  <navigator class="nav-item bdr">
+    <image src="/assets/icons/wj.png" />
+    <text>电子玩具</text>
+  </navigator>
+  <navigator class="nav-item">
+    <image src="/assets/icons/qb.png" />
+    <text>全部</text>
+  </navigator>
+</view>
+
+<!--灰色分割线-->
+<view class="divider">
+  
+</view>
+
+<view class="index-enter">
+  <navigator class="enter-item">
+    <image src="/assets/images/yhj.jpg" />
+  </navigator>
+  <navigator class="enter-item">
+    <image src="/assets/images/yhj1.jpg" />
+  </navigator>
+</view>
+
+<view>
+  <text class="title">热卖水果</text>
+</view>
+<view class="card" wx:for="{{imgdetail}}">
+    <image class="card-img" src="{{item.img_url}}"         mode="aspectFill" lazy-load />
+    <view class="nr">
+      <text class="card-title">{{item.title}}</text>
+      <text class="card-desc">{{item.dtitle}}</text>
+      <text class="card-price">￥ {{item.price}}</text>
+    </view>
+</view>

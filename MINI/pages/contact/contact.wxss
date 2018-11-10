@@ -1,0 +1,9 @@
+/* pages/contact/contact.wxss */
+.lx{
+    font-size: 14px;
+    color: gray;
+    margin-top: 50rpx;
+}
+.zcbt{
+    background-color: #E2DC71;
+}

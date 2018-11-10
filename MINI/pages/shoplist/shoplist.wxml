@@ -1,0 +1,21 @@
+<!--pages/shoplist/shoplist.wxml-->
+<view class="shop" wx:for="{{shoplist}}" wx:key="{{id}}">
+    <image bindtap="showDetail" data-pid="{{item.id}}" class="shop-img" src="/assets/foot/foot6.jpg" mode="aspectFill" lazy-load />
+    <view class="shop-info">
+        <text class="shop-title ell">店铺名称：{{item.title}}</text>
+        <text class="shop-tel">电话：{{item.tel}}</text>
+        <text class="shop-address">地址：{{item.address}}</text>
+        <text class="shop-time">营业时间:{{item.time}}</text>
+    </view>
+    <view class="shop-start">
+        <view class="star-after">
+            ★★★★★
+        </view>
+        <view class="star-befor" style="width:{{item.score}}">
+            ★★★★★
+        </view>
+    </view>
+</view>
+<view class="loadmore loading" wx:if="{{hasMore}}">
+    正在加载
+</view>

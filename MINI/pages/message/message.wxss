@@ -1,0 +1,66 @@
+/* pages/message/message.wxss */
+/*背景颜色灰色*/
+page{
+    background-color: #f1f1f1;
+}
+/*卡片区域块中布局 使用弹性布局 按照列方式*/
+.card{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20rpx;
+    margin: 60rpx 20rpx;
+    padding: 30rpx;
+    display: flex;
+    flex-direction: column; 
+
+      
+}
+
+/*3.标题*/
+.card-title{
+    font-size: 20px;
+    margin-bottom: 20rpx;
+}
+/*4.日期下划线*/
+.card-date{
+    font-size: 14px;
+    color: #cccccc;
+    border-bottom: 1rpx solid #ccc;
+    padding-bottom: 20rpx;
+    margin-bottom: 20rpx;
+}
+/*5.图片*/
+.card-img{
+    height: 300rpx;
+    width: 100%;
+
+}
+/*6.描述*/
+.card-desc{
+    color: #333;
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx solid #ddd;
+    margin: 20rpx 0;
+    font-size: 15px
+
+}
+/*6.查看详情*/
+.card-red{
+    color: #666;
+    font-size: 14px;
+    
+}
+/*箭头 放全局*/
+/*.arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.arrow::after{
+    content: "";
+    width: 15rpx;
+    height: 15rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;  
+    transform: rotate(45deg);
+}*/
